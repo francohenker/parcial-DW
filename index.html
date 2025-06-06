@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLab</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="background-image: url('./img/');">
+    <header id="header">
+        <nav>
+            <a href="/">
+                <h1>EcoLab</h1>
+
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>La primera tienda de plantas online que facilita la compra y elección de las mismas en un solo lugar!
+            </h2>
+            <p>Aqui encontraras todas las plantas que necesitas para tu hogar, trabajo, o cualquier espacio que desees embellecer.</p>
+        </section>
+
+        <section id="beneficios">
+            <h2>¿Por qué elegir EcoLab?</h2>
+            <ul>
+                <li>Variedad de plantas para todos los gustos</li>
+                <li>Asesoramiento personalizado</li>
+                <li>Envío a domicilio</li>
+            </ul>
+        </section>
+
+        
+        <section>
+            <img src="./img/planta.jpg" alt="">
+            <img src="./img/planta.jpg" alt="">
+        </section>
+
+
+        <section id="precio">
+            <h2>Simulador de Descuento</h2>
+            <p>Precio original: <strong>$100</strong></p>
+            <label for="descuento">Ingresá un % de descuento:</label>
+            <input type="number" id="descuento" min="0" max="100">
+            <button onclick="calcularDescuento()">Calcular precio final</button>
+            <p id="precioFinal"></p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contactanos</h2>
+            <form id="formulario" method="POST" action="formulario.php" onsubmit="return validarFormulario()">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="respuesta"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EcoLab Inc. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
