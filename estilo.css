@@ -44,10 +44,12 @@ section {
     background: white;
     margin: 1rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
     display: block;
     width: 100%;
     margin-top: 0.5rem;
@@ -76,4 +78,10 @@ button:hover {
     section {
         margin: 1rem 0.5rem;
     }
+}
+
+.img-mediana {
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
 }
